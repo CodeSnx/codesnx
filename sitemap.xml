@@ -95,7 +95,7 @@
 
   <url>
     <loc>http://wususu.top/</loc>
-    <lastmod>2021-09-19</lastmod>
+    <lastmod>2021-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -103,14 +103,14 @@
   
   <url>
     <loc>http://wususu.top/tags/hexo%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2021-09-19</lastmod>
+    <lastmod>2021-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://wususu.top/tags/Markdown/</loc>
-    <lastmod>2021-09-19</lastmod>
+    <lastmod>2021-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -119,14 +119,14 @@
   
   <url>
     <loc>http://wususu.top/categories/hexo%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2021-09-19</lastmod>
+    <lastmod>2021-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://wususu.top/categories/hexo%E5%8D%9A%E5%AE%A2/Markdown/</loc>
-    <lastmod>2021-09-19</lastmod>
+    <lastmod>2021-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

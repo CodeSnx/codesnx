@@ -6,7 +6,7 @@
   <link href="https://codesnx.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://codesnx.gitee.io/"/>
-  <updated>2022-12-03T04:03:15.588Z</updated>
+  <updated>2022-12-03T07:49:17.849Z</updated>
   <id>https://codesnx.gitee.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTTP协议</title>
+    <link href="https://codesnx.gitee.io/posts/15547.html"/>
+    <id>https://codesnx.gitee.io/posts/15547.html</id>
+    <published>2021-12-23T06:52:44.000Z</published>
+    <updated>2022-12-03T07:49:17.849Z</updated>
+    
+    <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><pre><code>它是基于TCP协议的应用层传输协议，简单来说就是客户端和服务端进行数据传输的一种规则。</code></pre><h3 id="请求"><a href="#请求" class="headerlink" title="请求"></a>请求</h3><pre><code>（1）请求行    请求方法：GET POST PUT DELETE        HEAD: 和GET基本一致，不过只返回内容        TRACE：借助代理上网，代理访问某网站之后，确定代理是否修改HTTP请求，可以使用TRACE测试一下，该服务器会把最后收到的请求返回        OPTIONS：返回服务器可用的请求方法        注：这些请求方法虽然HTTP协议规定，但WEB SERVER未必允许或支持这些方法。    请求路径：url的一部分    所用的协议（2）请求头信息（3）请求主体信息（4）头信息结束后和主体信息之间要空一行例：    POST /1.php HTTP/1.1    HOST:localhost    Content-length:5    age=3</code></pre><p>&nbsp;</p><h3 id="响应"><a href="#响应" class="headerlink" title="响应"></a>响应</h3><pre><code>(1)响应行    协议    状态码        常见状态码：            200： 服务器成功返回网页            301/302：永久/临时重定向            304 Not Modified：未修改            307：重定向中保持原有的请求数据         失败的状态码：            404：请求的网页不存在            503：服务器暂时不可用            500：服务器内部错误    状态文字(2)响应头信息(3)主体信息(4)头信息结束后和主体信息之间要空一行例:    HTTP/1.1 200 OK    Content-length: 5    hello</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;相遇皆是缘分&lt;/p&gt;
+&lt;h3 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;它是基于TCP协议的应用层传输协议，简单来说就是客户端和服务端进行数据传输的一种规则。&lt;/cod</summary>
+      
+    
+    
+    
+    <category term="HTTP协议" scheme="https://codesnx.gitee.io/categories/HTTP%E5%8D%8F%E8%AE%AE/"/>
+    
+    
+    <category term="HTTP协议" scheme="https://codesnx.gitee.io/tags/HTTP%E5%8D%8F%E8%AE%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>markdown</title>

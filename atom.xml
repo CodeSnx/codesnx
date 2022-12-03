@@ -3,11 +3,11 @@
   <title>吴苏苏</title>
   
   <subtitle>吴苏苏の博客</subtitle>
-  <link href="https://blog.snx.icu/atom.xml" rel="self"/>
+  <link href="http://blog.snx.icu/atom.xml" rel="self"/>
   
-  <link href="https://blog.snx.icu/"/>
+  <link href="http://blog.snx.icu/"/>
   <updated>2022-12-03T04:03:15.588Z</updated>
-  <id>https://blog.snx.icu/</id>
+  <id>http://blog.snx.icu/</id>
   
   <author>
     <name>吴苏苏</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>markdown</title>
-    <link href="https://blog.snx.icu/posts/15546.html"/>
-    <id>https://blog.snx.icu/posts/15546.html</id>
+    <link href="http://blog.snx.icu/posts/15546.html"/>
+    <id>http://blog.snx.icu/posts/15546.html</id>
     <published>2021-12-03T03:52:04.000Z</published>
     <updated>2022-12-03T04:03:15.588Z</updated>
     
@@ -34,10 +34,10 @@
     
     
     
-    <category term="Markdown" scheme="https://blog.snx.icu/categories/Markdown/"/>
+    <category term="Markdown" scheme="http://blog.snx.icu/categories/Markdown/"/>
     
     
-    <category term="Markdown" scheme="https://blog.snx.icu/tags/Markdown/"/>
+    <category term="Markdown" scheme="http://blog.snx.icu/tags/Markdown/"/>
     
   </entry>
   

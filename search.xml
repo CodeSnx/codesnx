@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>form表单查缺补漏</title>
+      <link href="/posts/15548.html"/>
+      <url>/posts/15548.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="学习一"><a href="#学习一" class="headerlink" title="学习一"></a>学习一</h3><p>`</p><pre><code>&lt;form action="www.baidu.com" method="post"&gt;    &lt;input type="text" name="" id="" value="只读可提交" readonly&gt;    &lt;input type="text" name="" id="" value="只读不可提交" disabled&gt;    &lt;label for=""&gt;姓名&lt;/label&gt;&lt;input type="text" name="" id="" value="最多      可输入的字符数量" maxlength="3" placeholder="提示"&gt;    &lt;select name="" id="" multiple size="2"&gt;        &lt;option value="" selected&gt;1&lt;/option&gt;        &lt;option value=""&gt;2&lt;/option&gt;        &lt;option value=""&gt;3&lt;/option&gt;    &lt;/select&gt;    &lt;input type="file" name="" id=""&gt;    &lt;!-- 隐藏域 --&gt;    &lt;input type="hidden" name="" id=""&gt;    &lt;input type="submit" name="提交" id=""&gt;    &lt;input type="reset" name="清空" id=""&gt;&lt;/form&gt;`</code></pre><h3 id="学习二"><a href="#学习二" class="headerlink" title="学习二"></a>学习二</h3><p>`</p><pre><code>&lt;!-- enctype="multipart/form-data" 当表单中有file时，应当添加，  不设置只能上传文本格式，设置后可增加文件格式的多样性 --&gt;&lt;!-- autocomplete 自动完成功能 on-是 off-否 --&gt;&lt;!-- novalidate 不验证，直接提交表单 --&gt;&lt;form action="" method="post" enctype="multipart/form-data"  autocomplete="on" novalidate&gt;&lt;/form&gt;    &lt;input type="file"&gt;    &lt;!-- required 当前输入字段必填 --&gt;    &lt;!-- formnovalidate 当前输入字段不验证 --&gt;    &lt;!-- placeholder 提示信息 --&gt;    &lt;!-- pattern="" 正则表达式输入语句 --&gt;    &lt;input type="text" name="" id="" required formnovalidate placeholder="请输入" pattern=""&gt;    &lt;!-- 输入框提示 可下拉 --&gt;    &lt;input type="text" name="" id="" list="tips"&gt;    &lt;datalist id="tips"&gt;        &lt;option value="一"&gt;&lt;/option&gt;        &lt;option value="二"&gt;&lt;/option&gt;        &lt;option value="三"&gt;&lt;/option&gt;        &lt;option value="四"&gt;&lt;/option&gt;    &lt;/datalist&gt;    &lt;!-- for="" 引号内对应id值 点击label内文字可选中对应单选按钮 --&gt;    &lt;label for="man"&gt;男&lt;/label&gt;    &lt;input type="radio" name="sex" id="man" value="1"&gt;    &lt;label for="woman"&gt;女&lt;/label&gt;    &lt;input type="radio" name="sex" id="woman" value="0"&gt;</code></pre><p>`</p><h3 id="代码地址"><a href="#代码地址" class="headerlink" title="代码地址"></a>代码地址</h3><p><a href="https://gitee.com/CodeSnX/html_study">代码地址</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> HTML </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HTML </tag>
+            
+            <tag> form表单 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>HTTP协议</title>
       <link href="/posts/15547.html"/>
       <url>/posts/15547.html</url>

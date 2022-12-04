@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://codesnx.gitee.io/posts/15548.html</loc>
+    <loc>https://codesnx.gitee.io/posts/form.html</loc>
     
     <lastmod>2022-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>https://codesnx.gitee.io/posts/15547.html</loc>
+    <loc>https://codesnx.gitee.io/posts/md.html</loc>
     
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>https://codesnx.gitee.io/posts/15546.html</loc>
+    <loc>https://codesnx.gitee.io/posts/http.html</loc>
     
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-04</lastmod>
     
   </url>
   
@@ -116,13 +116,6 @@
 
   
   <url>
-    <loc>https://codesnx.gitee.io/tags/Markdown/</loc>
-    <lastmod>2022-12-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://codesnx.gitee.io/tags/HTML/</loc>
     <lastmod>2022-12-04</lastmod>
     <changefreq>daily</changefreq>
@@ -143,14 +136,14 @@
     <priority>0.6</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://codesnx.gitee.io/categories/Markdown/</loc>
+    <loc>https://codesnx.gitee.io/tags/Markdown/</loc>
     <lastmod>2022-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
+  
+
   
   <url>
     <loc>https://codesnx.gitee.io/categories/HTML/</loc>
@@ -161,6 +154,13 @@
   
   <url>
     <loc>https://codesnx.gitee.io/categories/HTTP%E5%8D%8F%E8%AE%AE/</loc>
+    <lastmod>2022-12-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://codesnx.gitee.io/categories/Markdown/</loc>
     <lastmod>2022-12-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

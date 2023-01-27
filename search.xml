@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>九九乘法表</title>
+      <link href="/posts/nine.html"/>
+      <url>/posts/nine.html</url>
+      
+        <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><pre><code>使用JavaScript实现九九乘法表</code></pre><h3 id="页面效果"><a href="#页面效果" class="headerlink" title="页面效果"></a>页面效果</h3><img src="https://i.328888.xyz/2023/01/27/bQwqX.png"><h3 id="JavaScript代码"><a href="#JavaScript代码" class="headerlink" title="JavaScript代码"></a>JavaScript代码</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 定义字符串,用于汇总</span><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span><span class="token comment">// 外层循环,共九行</span><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">// 内层循环,一列至九列依次递增</span><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;=</span> i<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">// 汇总到字符串str中</span>str <span class="token operator">+=</span> j <span class="token operator">+</span> <span class="token string">" × "</span> <span class="token operator">+</span> i <span class="token operator">+</span> <span class="token string">" = "</span> <span class="token operator">+</span> j <span class="token operator">*</span> i <span class="token operator">+</span> <span class="token string">"\t"</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token comment">// 换行</span>str <span class="token operator">+=</span> <span class="token string">"\n"</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token comment">// 输出</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> 九九乘法表 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>form表单-demo3</title>
       <link href="/posts/form-demo3.html"/>
       <url>/posts/form-demo3.html</url>

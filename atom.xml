@@ -6,7 +6,7 @@
   <link href="https://codesnx.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://codesnx.gitee.io/"/>
-  <updated>2023-01-28T07:25:04.218Z</updated>
+  <updated>2023-01-28T08:40:02.666Z</updated>
   <id>https://codesnx.gitee.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>翻转数组</title>
+    <link href="https://codesnx.gitee.io/posts/flip-array.html"/>
+    <id>https://codesnx.gitee.io/posts/flip-array.html</id>
+    <published>2022-01-17T05:31:35.000Z</published>
+    <updated>2023-01-28T08:40:02.666Z</updated>
+    
+    <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><pre><code>在JavaScript中,翻转数组的两种方式</code></pre><h3 id="页面效果"><a href="#页面效果" class="headerlink" title="页面效果"></a>页面效果</h3><img src="https://i.328888.xyz/2023/01/28/jInkq.png"><h3 id="JavaScript代码"><a href="#JavaScript代码" class="headerlink" title="JavaScript代码"></a>JavaScript代码</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 第一种,首尾交换</span><span class="token comment">// 初始数组</span><span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">// 循环二分之一数组长度</span><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arr<span class="token punctuation">.</span>length<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">// 借助temp交换</span><span class="token keyword">var</span> temp <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>arr<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">-</span> i<span class="token punctuation">]</span><span class="token punctuation">;</span>arr<span class="token punctuation">[</span>arr<span class="token punctuation">.</span>length<span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">-</span> i<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token comment">// 打印</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 第二种,借助新数组</span><span class="token comment">// 初始数组</span><span class="token keyword">var</span> arr1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">,</span><span class="token string">'b'</span><span class="token punctuation">,</span><span class="token string">'c'</span><span class="token punctuation">,</span><span class="token string">'d'</span><span class="token punctuation">,</span><span class="token string">'e'</span><span class="token punctuation">,</span><span class="token string">'f'</span><span class="token punctuation">,</span><span class="token string">'g'</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">// 初始新数组</span><span class="token keyword">var</span> newArr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 循环</span><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arr1<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">// 新数组依次添加原数组从末位开始向首位的值</span>newArr<span class="token punctuation">[</span>newArr<span class="token punctuation">.</span>length<span class="token punctuation">]</span> <span class="token operator">=</span> arr1<span class="token punctuation">[</span>arr1<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">-</span> i<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token comment">// 打印</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>newArr<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;相遇皆是缘分&lt;/p&gt;
+&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;在JavaScript中,翻转数组的两种方式&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;页面效果</summary>
+      
+    
+    
+    
+    <category term="JavaScript" scheme="https://codesnx.gitee.io/categories/JavaScript/"/>
+    
+    
+    <category term="JavaScript" scheme="https://codesnx.gitee.io/tags/JavaScript/"/>
+    
+    <category term="翻转数组" scheme="https://codesnx.gitee.io/tags/%E7%BF%BB%E8%BD%AC%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
   
   <entry>
     <title>1~100累加值(跳过个位数为3的数)</title>

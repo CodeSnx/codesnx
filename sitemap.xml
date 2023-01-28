@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://codesnx.gitee.io/posts/js-demo.html</loc>
+    
+    <lastmod>2023-01-28</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://codesnx.gitee.io/posts/nine.html</loc>
     
     <lastmod>2023-01-27</lastmod>
@@ -137,50 +144,50 @@
 
   <url>
     <loc>https://codesnx.gitee.io/</loc>
-    <lastmod>2023-01-27</lastmod>
+    <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://codesnx.gitee.io/tags/JavaScript/</loc>
+    <lastmod>2023-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://codesnx.gitee.io/tags/HTML/</loc>
-    <lastmod>2023-01-27</lastmod>
+    <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://codesnx.gitee.io/tags/form%E8%A1%A8%E5%8D%95/</loc>
-    <lastmod>2023-01-27</lastmod>
+    <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://codesnx.gitee.io/tags/HTTP%E5%8D%8F%E8%AE%AE/</loc>
-    <lastmod>2023-01-27</lastmod>
+    <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://codesnx.gitee.io/tags/Markdown/</loc>
-    <lastmod>2023-01-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://codesnx.gitee.io/tags/JavaScript/</loc>
-    <lastmod>2023-01-27</lastmod>
+    <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://codesnx.gitee.io/tags/%E4%B9%9D%E4%B9%9D%E4%B9%98%E6%B3%95%E8%A1%A8/</loc>
-    <lastmod>2023-01-27</lastmod>
+    <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -188,29 +195,29 @@
 
   
   <url>
+    <loc>https://codesnx.gitee.io/categories/JavaScript/</loc>
+    <lastmod>2023-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://codesnx.gitee.io/categories/HTML/</loc>
-    <lastmod>2023-01-27</lastmod>
+    <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://codesnx.gitee.io/categories/HTTP%E5%8D%8F%E8%AE%AE/</loc>
-    <lastmod>2023-01-27</lastmod>
+    <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://codesnx.gitee.io/categories/Markdown/</loc>
-    <lastmod>2023-01-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://codesnx.gitee.io/categories/JavaScript/</loc>
-    <lastmod>2023-01-27</lastmod>
+    <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

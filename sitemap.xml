@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://codesnx.gitee.io/posts/bubbling-sorting.html</loc>
+    
+    <lastmod>2023-01-28</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://codesnx.gitee.io/posts/flip-array.html</loc>
     
     <lastmod>2023-01-28</lastmod>
@@ -158,6 +165,13 @@
 
   
   <url>
+    <loc>https://codesnx.gitee.io/tags/JavaScript/</loc>
+    <lastmod>2023-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://codesnx.gitee.io/tags/HTML/</loc>
     <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
@@ -172,7 +186,7 @@
   </url>
   
   <url>
-    <loc>https://codesnx.gitee.io/tags/JavaScript/</loc>
+    <loc>https://codesnx.gitee.io/tags/HTTP%E5%8D%8F%E8%AE%AE/</loc>
     <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -186,14 +200,14 @@
   </url>
   
   <url>
-    <loc>https://codesnx.gitee.io/tags/HTTP%E5%8D%8F%E8%AE%AE/</loc>
+    <loc>https://codesnx.gitee.io/tags/%E4%B9%9D%E4%B9%9D%E4%B9%98%E6%B3%95%E8%A1%A8/</loc>
     <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://codesnx.gitee.io/tags/%E4%B9%9D%E4%B9%9D%E4%B9%98%E6%B3%95%E8%A1%A8/</loc>
+    <loc>https://codesnx.gitee.io/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E6%B3%95/</loc>
     <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -209,13 +223,6 @@
 
   
   <url>
-    <loc>https://codesnx.gitee.io/categories/HTML/</loc>
-    <lastmod>2023-01-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://codesnx.gitee.io/categories/JavaScript/</loc>
     <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
@@ -223,7 +230,7 @@
   </url>
   
   <url>
-    <loc>https://codesnx.gitee.io/categories/Markdown/</loc>
+    <loc>https://codesnx.gitee.io/categories/HTML/</loc>
     <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -231,6 +238,13 @@
   
   <url>
     <loc>https://codesnx.gitee.io/categories/HTTP%E5%8D%8F%E8%AE%AE/</loc>
+    <lastmod>2023-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://codesnx.gitee.io/categories/Markdown/</loc>
     <lastmod>2023-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

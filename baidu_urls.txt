@@ -1,3 +1,4 @@
+https://codesnx.gitee.io/posts/bubbling-sorting.html
 https://codesnx.gitee.io/posts/flip-array.html
 https://codesnx.gitee.io/posts/js-demo.html
 https://codesnx.gitee.io/posts/nine.html

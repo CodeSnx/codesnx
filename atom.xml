@@ -6,7 +6,7 @@
   <link href="https://codesnx.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://codesnx.gitee.io/"/>
-  <updated>2023-01-29T02:36:24.518Z</updated>
+  <updated>2023-01-29T03:24:08.662Z</updated>
   <id>https://codesnx.gitee.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>简易ATM</title>
+    <link href="https://codesnx.gitee.io/posts/atm.html"/>
+    <id>https://codesnx.gitee.io/posts/atm.html</id>
+    <published>2022-02-03T09:21:59.000Z</published>
+    <updated>2023-01-29T03:24:08.662Z</updated>
+    
+    <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><pre><code>使用JavaScript实现简易atm操作。</code></pre><h3 id="JavaScript代码"><a href="#JavaScript代码" class="headerlink" title="JavaScript代码"></a>JavaScript代码</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 初始余额为100</span><span class="token keyword">var</span> money <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span><span class="token comment">// 初始flag为true</span><span class="token keyword">var</span> flag <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span><span class="token comment">// 循环</span><span class="token keyword">while</span> <span class="token punctuation">(</span>flag<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">// 定义索引index，获取输入值</span><span class="token keyword">var</span> index <span class="token operator">=</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">'请输入您要的操作：\n 1.存钱 \n 2.取钱 \n 3.显示余额 \n 4.退出'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 判断</span><span class="token keyword">switch</span> <span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">/** * 存钱 * 输入存的金额 * 原有存款加上新增金额 * 弹框显示当前存款 */</span><span class="token keyword">case</span> <span class="token string">'1'</span><span class="token operator">:</span><span class="token keyword">var</span> addMoney <span class="token operator">=</span> <span class="token function">parseFloat</span><span class="token punctuation">(</span><span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">'请输入您要存的金额：'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>money <span class="token operator">+=</span> addMoney<span class="token punctuation">;</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'您当前存款为：'</span> <span class="token operator">+</span> money<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token comment">/** * 取钱 * 输入取钱金额 * 判断所取金额是否小于存款 * 小于：存款减去所取金额，并提示成功和显示余额 * 大于：提示当前余额不足 */</span><span class="token keyword">case</span> <span class="token string">'2'</span><span class="token operator">:</span><span class="token keyword">var</span> subMoney <span class="token operator">=</span> <span class="token function">parseFloat</span><span class="token punctuation">(</span><span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">'请输入您要取得金额：'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">if</span> <span class="token punctuation">(</span>subMoney <span class="token operator">&lt;=</span> money<span class="token punctuation">)</span><span class="token punctuation">{</span>money <span class="token operator">-=</span> subMoney<span class="token punctuation">;</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'取款成功，当前余额：'</span> <span class="token operator">+</span> money<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'当前余额不足'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token comment">// 弹框显示当前余额</span><span class="token keyword">case</span> <span class="token string">'3'</span><span class="token operator">:</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'当前余额：'</span> <span class="token operator">+</span> money<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token comment">// 给flag赋值false，停止循环即退出</span><span class="token keyword">case</span> <span class="token string">'4'</span><span class="token operator">:</span>flag <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token comment">// 输入其它提示输入错误</span><span class="token keyword">default</span><span class="token operator">:</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'输入错误'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;相遇皆是缘分&lt;/p&gt;
+&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;使用JavaScript实现简易atm操作。&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;Java</summary>
+      
+    
+    
+    
+    <category term="JavaScript" scheme="https://codesnx.gitee.io/categories/JavaScript/"/>
+    
+    
+    <category term="JavaScript" scheme="https://codesnx.gitee.io/tags/JavaScript/"/>
+    
+    <category term="简易ATM" scheme="https://codesnx.gitee.io/tags/%E7%AE%80%E6%98%93ATM/"/>
+    
+  </entry>
   
   <entry>
     <title>学成在线</title>

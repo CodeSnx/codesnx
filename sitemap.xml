@@ -172,7 +172,7 @@
 
   <url>
     <loc>https://codesnx.gitee.io/</loc>
-    <lastmod>2023-01-29</lastmod>
+    <lastmod>2023-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -180,70 +180,70 @@
   
   <url>
     <loc>https://codesnx.gitee.io/tags/JavaScript/</loc>
-    <lastmod>2023-01-29</lastmod>
+    <lastmod>2023-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://codesnx.gitee.io/tags/HTML/</loc>
-    <lastmod>2023-01-29</lastmod>
+    <lastmod>2023-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://codesnx.gitee.io/tags/form%E8%A1%A8%E5%8D%95/</loc>
-    <lastmod>2023-01-29</lastmod>
+    <lastmod>2023-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://codesnx.gitee.io/tags/HTTP%E5%8D%8F%E8%AE%AE/</loc>
-    <lastmod>2023-01-29</lastmod>
+    <lastmod>2023-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://codesnx.gitee.io/tags/Markdown/</loc>
-    <lastmod>2023-01-29</lastmod>
+    <lastmod>2023-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://codesnx.gitee.io/tags/%E4%B9%9D%E4%B9%9D%E4%B9%98%E6%B3%95%E8%A1%A8/</loc>
-    <lastmod>2023-01-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://codesnx.gitee.io/tags/CSS/</loc>
-    <lastmod>2023-01-29</lastmod>
+    <lastmod>2023-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://codesnx.gitee.io/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E6%B3%95/</loc>
-    <lastmod>2023-01-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://codesnx.gitee.io/tags/%E7%AE%80%E6%98%93ATM/</loc>
-    <lastmod>2023-01-29</lastmod>
+    <lastmod>2023-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://codesnx.gitee.io/tags/%E7%BF%BB%E8%BD%AC%E6%95%B0%E7%BB%84/</loc>
-    <lastmod>2023-01-29</lastmod>
+    <lastmod>2023-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://codesnx.gitee.io/tags/CSS/</loc>
+    <lastmod>2023-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://codesnx.gitee.io/tags/%E7%AE%80%E6%98%93ATM/</loc>
+    <lastmod>2023-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -252,35 +252,35 @@
   
   <url>
     <loc>https://codesnx.gitee.io/categories/JavaScript/</loc>
-    <lastmod>2023-01-29</lastmod>
+    <lastmod>2023-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://codesnx.gitee.io/categories/HTML/</loc>
-    <lastmod>2023-01-29</lastmod>
+    <lastmod>2023-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://codesnx.gitee.io/categories/HTTP%E5%8D%8F%E8%AE%AE/</loc>
-    <lastmod>2023-01-29</lastmod>
+    <lastmod>2023-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://codesnx.gitee.io/categories/Markdown/</loc>
-    <lastmod>2023-01-29</lastmod>
+    <lastmod>2023-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://codesnx.gitee.io/categories/%E9%9D%99%E6%80%81%E9%A1%B5%E9%9D%A2/</loc>
-    <lastmod>2023-01-29</lastmod>
+    <lastmod>2023-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>猜数字游戏</title>
+      <link href="/posts/guess-number.html"/>
+      <url>/posts/guess-number.html</url>
+      
+        <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><pre><code>使用JavaScript实现猜数字小游戏</code></pre><h3 id="JavaScript代码"><a href="#JavaScript代码" class="headerlink" title="JavaScript代码"></a>JavaScript代码</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 初始1-10随机整数</span><span class="token keyword">var</span> num <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">10</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 获取数字</span><span class="token keyword">var</span> getNum <span class="token operator">=</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">'请输入你猜的数字(1-10整数): '</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 初始循环条件为true</span><span class="token keyword">var</span> flag <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span><span class="token comment">// 循环</span><span class="token keyword">while</span> <span class="token punctuation">(</span>flag<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">// 若大于</span><span class="token keyword">if</span> <span class="token punctuation">(</span>getNum <span class="token operator">&gt;</span> num<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">// 提示猜大了，继续猜</span>getNum <span class="token operator">=</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">'猜大了,继续猜'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 若小于</span><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>getNum <span class="token operator">&lt;</span> num<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">// 提示猜小了继续猜</span>getNum <span class="token operator">=</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">'猜小了,继续猜'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 猜对了</span><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'恭喜你猜对了'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 循环条件改为false，结束循环</span>flag <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> 猜数字小游戏 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>简易ATM</title>
       <link href="/posts/atm.html"/>
       <url>/posts/atm.html</url>

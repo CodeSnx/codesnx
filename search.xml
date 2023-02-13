@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>两面翻转的图片</title>
+      <link href="/posts/turn-over.html"/>
+      <url>/posts/turn-over.html</url>
+      
+        <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><pre><code>使用HTML、CSS实现两面图片翻转效果</code></pre><h3 id="HTML代码"><a href="#HTML代码" class="headerlink" title="HTML代码"></a>HTML代码</h3><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token comment">&lt;!-- 盒子 --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>box<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- 两张图片 --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://img2.baidu.com/it/u=2512072660,17599263&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=500&amp;h=500<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://img2.baidu.com/it/u=783855986,259499916&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=500&amp;h=500<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="CSS代码"><a href="#CSS代码" class="headerlink" title="CSS代码"></a>CSS代码</h3><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span><span class="token comment">/* 相对定位 */</span><span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token selector">img</span> <span class="token punctuation">{</span><span class="token comment">/* 宽高 */</span><span class="token property">width</span><span class="token punctuation">:</span> 250px<span class="token punctuation">;</span><span class="token property">height</span><span class="token punctuation">:</span> 250px<span class="token punctuation">;</span><span class="token comment">/* 绝对定位 */</span><span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span><span class="token comment">/* 位置 */</span><span class="token property">left</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span><span class="token property">top</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span><span class="token comment">/* 圆角 */</span><span class="token property">border-radius</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span><span class="token comment">/* 动画过渡时间 */</span><span class="token property">transition</span><span class="token punctuation">:</span> all 1s<span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token selector">img:first-child</span> <span class="token punctuation">{</span><span class="token comment">/* 层级 */</span><span class="token property">z-index</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><span class="token comment">/* 不是正面时隐藏 */</span><span class="token property">backface-visibility</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token selector">div:hover img</span> <span class="token punctuation">{</span><span class="token comment">/* 旋转度数 */</span><span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotateY</span><span class="token punctuation">(</span>180deg<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> HTML </category>
+          
+          <category> CSS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 图片翻转 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>开门效果</title>
       <link href="/posts/open-door.html"/>
       <url>/posts/open-door.html</url>

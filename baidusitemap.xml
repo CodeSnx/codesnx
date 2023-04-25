@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://snx.icu/posts/rkn.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/if-for.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/show-if.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
     <loc>https://snx.icu/posts/vue-lifecycle.html</loc>
     <lastmod>2023-04-25</lastmod>
   </url>

@@ -4,6 +4,87 @@
   
     
     <entry>
+      <title>ref、keep-alive、nextTick</title>
+      <link href="/posts/rkn.html"/>
+      <url>/posts/rkn.html</url>
+      
+        <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="ref"><a href="#ref" class="headerlink" title="ref"></a>ref</h3><h4 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h4><pre><code>获取dom</code></pre><h4 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h4><pre><code>如果项目中使用插件,且插件需要获取dom的,则使用ref</code></pre><h3 id="keep-alive"><a href="#keep-alive" class="headerlink" title="keep-alive"></a>keep-alive</h3><h4 id="作用-1"><a href="#作用-1" class="headerlink" title="作用"></a>作用</h4><pre><code>缓存组件</code></pre><h4 id="多出两个生出周期"><a href="#多出两个生出周期" class="headerlink" title="多出两个生出周期"></a>多出两个生出周期</h4><pre class="line-numbers language-js" data-language="js"><code class="language-js">activateddeactivated<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h4 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h4><pre><code>提升性能</code></pre><h3 id="nextTick"><a href="#nextTick" class="headerlink" title="nextTick"></a>nextTick</h3><h4 id="作用-2"><a href="#作用-2" class="headerlink" title="作用"></a>作用</h4><pre><code>当dom更新完毕执行内部代码</code></pre><h4 id="场景-1"><a href="#场景-1" class="headerlink" title="场景"></a>场景</h4><pre><code>使用插件的时候会用到,例如new Swiper这个插件可能会获取当前元素的宽高,如直接获取可能会出现一些问题,等dom加载完毕再去获取就可避免此类问题</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+            <tag> 面试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>v-if和v-for优先级</title>
+      <link href="/posts/if-for.html"/>
+      <url>/posts/if-for.html</url>
+      
+        <content type="html"><![CDATA[<p>相遇皆是缘分</p><pre><code>v-for的优先级高于v-if,在源码中体现v-if和v-for要避免在同一个节点上使用,因为性能会比较差且eslint校验也不会通过如果需要同时使用,可以将v-if写在父节点上</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+            <tag> 面试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>v-show和v-if是干什么的,有什么区别</title>
+      <link href="/posts/show-if.html"/>
+      <url>/posts/show-if.html</url>
+      
+        <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="v-show"><a href="#v-show" class="headerlink" title="v-show"></a>v-show</h3><pre><code>通过display实现的是显示和隐藏</code></pre><h3 id="v-if"><a href="#v-if" class="headerlink" title="v-if"></a>v-if</h3><pre><code>通过append和remove实现节点的删除和创建</code></pre><h3 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h3><pre><code>显示和隐藏用v-show创建和删除用v-if频繁切换用v-show不频繁切换用v-if首次加载用v-if,因为首次加载没有这个节点,v-if可以创建这个节点v-show不管是不是首次加载都要有这个节点</code></pre><h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><pre><code>v-show: 加入购物车、分享等涉及蒙层的基本上都使用v-showv-if: 首页栏目切换时</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+            <tag> 面试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>vue生命周期</title>
       <link href="/posts/vue-lifecycle.html"/>
       <url>/posts/vue-lifecycle.html</url>
@@ -22,9 +103,9 @@
             
             <tag> Vue </tag>
             
-            <tag> Vue生命周期 </tag>
-            
             <tag> 面试题 </tag>
+            
+            <tag> Vue生命周期 </tag>
             
         </tags>
       

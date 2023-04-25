@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snx.icu/posts/rkn.html</loc>
+    
+    <lastmod>2023-04-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snx.icu/posts/if-for.html</loc>
+    
+    <lastmod>2023-04-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snx.icu/posts/show-if.html</loc>
+    
+    <lastmod>2023-04-25</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snx.icu/posts/vue-lifecycle.html</loc>
     
     <lastmod>2023-04-25</lastmod>
@@ -284,14 +305,14 @@
   </url>
   
   <url>
-    <loc>https://snx.icu/tags/tab%E6%A0%8F%E5%88%87%E6%8D%A2%E6%95%88%E6%9E%9C/</loc>
+    <loc>https://snx.icu/tags/Vue/</loc>
     <lastmod>2023-04-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://snx.icu/tags/Vue/</loc>
+    <loc>https://snx.icu/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
     <lastmod>2023-04-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -305,7 +326,7 @@
   </url>
   
   <url>
-    <loc>https://snx.icu/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
+    <loc>https://snx.icu/tags/tab%E6%A0%8F%E5%88%87%E6%8D%A2%E6%95%88%E6%9E%9C/</loc>
     <lastmod>2023-04-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -326,14 +347,14 @@
   </url>
   
   <url>
-    <loc>https://snx.icu/tags/%E8%AF%84%E8%AE%BA/</loc>
+    <loc>https://snx.icu/tags/%E5%85%A8%E9%80%89-%E5%8F%8D%E9%80%89/</loc>
     <lastmod>2023-04-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://snx.icu/tags/%E5%85%A8%E9%80%89-%E5%8F%8D%E9%80%89/</loc>
+    <loc>https://snx.icu/tags/%E8%AF%84%E8%AE%BA/</loc>
     <lastmod>2023-04-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -433,14 +454,14 @@
   </url>
   
   <url>
-    <loc>https://snx.icu/categories/HTML/CSS/</loc>
+    <loc>https://snx.icu/categories/Vue/</loc>
     <lastmod>2023-04-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://snx.icu/categories/Vue/</loc>
+    <loc>https://snx.icu/categories/HTML/CSS/</loc>
     <lastmod>2023-04-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

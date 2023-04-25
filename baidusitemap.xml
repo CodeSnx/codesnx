@@ -1,23 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://snx.icu/posts/component-communication.html</loc>
+    <loc>https://snx.icu/posts/learn-online.html</loc>
     <lastmod>2023-04-25</lastmod>
   </url>
   <url>
-    <loc>https://snx.icu/posts/cmw.html</loc>
+    <loc>https://snx.icu/posts/select.html</loc>
     <lastmod>2023-04-25</lastmod>
   </url>
   <url>
-    <loc>https://snx.icu/posts/rkn.html</loc>
+    <loc>https://snx.icu/posts/password-hint.html</loc>
     <lastmod>2023-04-25</lastmod>
   </url>
   <url>
-    <loc>https://snx.icu/posts/if-for.html</loc>
+    <loc>https://snx.icu/posts/bubbling-sorting.html</loc>
     <lastmod>2023-04-25</lastmod>
   </url>
   <url>
-    <loc>https://snx.icu/posts/show-if.html</loc>
+    <loc>https://snx.icu/posts/carousel-map.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/turn-over.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/open-door.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/nine.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/atm.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/b-comments.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/return-now.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/flip-array.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/guess-number.html</loc>
     <lastmod>2023-04-25</lastmod>
   </url>
   <url>
@@ -25,87 +57,55 @@
     <lastmod>2023-04-25</lastmod>
   </url>
   <url>
-    <loc>https://snx.icu/posts/select.html</loc>
-    <lastmod>2023-03-04</lastmod>
+    <loc>https://snx.icu/posts/show-if.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/if-for.html</loc>
+    <lastmod>2023-04-25</lastmod>
   </url>
   <url>
     <loc>https://snx.icu/posts/tab-handoff.html</loc>
-    <lastmod>2023-03-02</lastmod>
+    <lastmod>2023-04-25</lastmod>
   </url>
   <url>
-    <loc>https://snx.icu/posts/b-comments.html</loc>
-    <lastmod>2023-03-02</lastmod>
-  </url>
-  <url>
-    <loc>https://snx.icu/posts/carousel-map.html</loc>
-    <lastmod>2023-02-27</lastmod>
-  </url>
-  <url>
-    <loc>https://snx.icu/posts/password-hint.html</loc>
-    <lastmod>2023-02-15</lastmod>
-  </url>
-  <url>
-    <loc>https://snx.icu/posts/turn-over.html</loc>
-    <lastmod>2023-02-13</lastmod>
-  </url>
-  <url>
-    <loc>https://snx.icu/posts/open-door.html</loc>
-    <lastmod>2023-02-08</lastmod>
-  </url>
-  <url>
-    <loc>https://snx.icu/posts/return-now.html</loc>
-    <lastmod>2023-02-05</lastmod>
-  </url>
-  <url>
-    <loc>https://snx.icu/posts/guess-number.html</loc>
-    <lastmod>2023-02-03</lastmod>
-  </url>
-  <url>
-    <loc>https://snx.icu/posts/atm.html</loc>
-    <lastmod>2023-01-29</lastmod>
-  </url>
-  <url>
-    <loc>https://snx.icu/posts/learn-online.html</loc>
-    <lastmod>2023-01-29</lastmod>
-  </url>
-  <url>
-    <loc>https://snx.icu/posts/bubbling-sorting.html</loc>
-    <lastmod>2023-01-28</lastmod>
-  </url>
-  <url>
-    <loc>https://snx.icu/posts/flip-array.html</loc>
-    <lastmod>2023-01-28</lastmod>
-  </url>
-  <url>
-    <loc>https://snx.icu/posts/js-demo.html</loc>
-    <lastmod>2023-01-28</lastmod>
-  </url>
-  <url>
-    <loc>https://snx.icu/posts/nine.html</loc>
-    <lastmod>2023-01-27</lastmod>
-  </url>
-  <url>
-    <loc>https://snx.icu/posts/form-demo3.html</loc>
-    <lastmod>2023-01-27</lastmod>
-  </url>
-  <url>
-    <loc>https://snx.icu/posts/form-demo2.html</loc>
-    <lastmod>2022-12-08</lastmod>
-  </url>
-  <url>
-    <loc>https://snx.icu/posts/form-demo1.html</loc>
-    <lastmod>2022-12-08</lastmod>
-  </url>
-  <url>
-    <loc>https://snx.icu/posts/form.html</loc>
-    <lastmod>2022-12-04</lastmod>
+    <loc>https://snx.icu/posts/rkn.html</loc>
+    <lastmod>2023-04-25</lastmod>
   </url>
   <url>
     <loc>https://snx.icu/posts/md.html</loc>
-    <lastmod>2022-12-04</lastmod>
+    <lastmod>2023-04-25</lastmod>
   </url>
   <url>
     <loc>https://snx.icu/posts/http.html</loc>
-    <lastmod>2022-12-04</lastmod>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/form.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/form-demo3.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/form-demo2.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/form-demo1.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/cmw.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/js-demo.html</loc>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://snx.icu/posts/component-communication.html</loc>
+    <lastmod>2023-04-25</lastmod>
   </url>
 </urlset> 

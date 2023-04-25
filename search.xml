@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>vue组件的通信（组件传值）</title>
+      <link href="/posts/component-communication.html"/>
+      <url>/posts/component-communication.html</url>
+      
+        <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="父传子"><a href="#父传子" class="headerlink" title="父传子"></a>父传子</h3><pre><code>子组件通过props接收</code></pre><pre class="line-numbers language-js" data-language="js"><code class="language-js">例<span class="token operator">:</span> 父<span class="token operator">:</span> <span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"#"</span> msg<span class="token operator">=</span><span class="token string">"传值"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">&gt;</span>子<span class="token operator">:</span> props<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'msg'</span><span class="token punctuation">]</span> 或 props<span class="token operator">:</span> <span class="token punctuation">{</span> msg<span class="token operator">:</span> String <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="子传父"><a href="#子传父" class="headerlink" title="子传父"></a>子传父</h3><pre><code>子组件通过$emit传自定义事件和数据,子组件通过自定义事件进行接收</code></pre><pre class="line-numbers language-js" data-language="js"><code class="language-js">例<span class="token operator">:</span> 子<span class="token operator">:</span> <span class="token operator">&lt;</span>button @click<span class="token operator">=</span><span class="token string">"changeParent"</span><span class="token operator">&gt;</span>点击传值<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>methods<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token function">changeParent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'handleChange'</span><span class="token punctuation">,</span> <span class="token string">'传值'</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span>父<span class="token operator">:</span> <span class="token operator">&lt;</span>child @handleChange<span class="token operator">=</span><span class="token string">"changeName"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>child<span class="token operator">&gt;</span>methods<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token function">changeName</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">}</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="兄弟传值"><a href="#兄弟传值" class="headerlink" title="兄弟传值"></a>兄弟传值</h3><pre><code>创建一个bus作为中转,A组件通过$emit传,B组件通过$on接</code></pre><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token constant">A</span>组件<span class="token operator">:</span> <span class="token operator">&lt;</span>button @click<span class="token operator">=</span><span class="token string">"btn"</span><span class="token operator">&gt;</span>点击传值<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>methods<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token function">btn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>bus<span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'handleChange'</span><span class="token punctuation">,</span><span class="token string">'传值'</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token constant">B</span>组件<span class="token operator">:</span>   <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>bus<span class="token punctuation">.</span><span class="token function">$on</span><span class="token punctuation">(</span><span class="token string">'handleChange'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> val<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><pre><code>当组件传值涉及比较麻烦的情况下,一般都是使用Vuex管理数据</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+            <tag> 面试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>computed、methods、watch的区别</title>
+      <link href="/posts/cmw.html"/>
+      <url>/posts/cmw.html</url>
+      
+        <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="computed-计算属性"><a href="#computed-计算属性" class="headerlink" title="computed: 计算属性"></a>computed: 计算属性</h3><pre><code>可以监听某些数据的变化，有缓存如果一进入页面调用就会触发</code></pre><h3 id="methods"><a href="#methods" class="headerlink" title="methods"></a>methods</h3><pre><code>没有缓存如果一进入页面调用，就会触发</code></pre><h3 id="watch-监听-数据、路由"><a href="#watch-监听-数据、路由" class="headerlink" title="watch: 监听(数据、路由)"></a>watch: 监听(数据、路由)</h3><pre><code>当数据发生改变时，才会触发可以得到现在的值和过去的值</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+            <tag> 面试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ref、keep-alive、nextTick</title>
       <link href="/posts/rkn.html"/>
       <url>/posts/rkn.html</url>

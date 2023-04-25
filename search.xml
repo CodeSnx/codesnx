@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>vue生命周期</title>
+      <link href="/posts/vue-lifecycle.html"/>
+      <url>/posts/vue-lifecycle.html</url>
+      
+        <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="Vue生命周期有哪些"><a href="#Vue生命周期有哪些" class="headerlink" title="Vue生命周期有哪些?"></a>Vue生命周期有哪些?</h3><pre><code>系统自带了八个生命周期,分别是</code></pre><pre class="line-numbers language-js" data-language="js"><code class="language-js">beforeCreatecreatedbeforeMountmountedbeforeUpdateupdatedbeforeDestroydestroyed<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="一旦进入组件或进入页面-会执行哪些生命周期"><a href="#一旦进入组件或进入页面-会执行哪些生命周期" class="headerlink" title="一旦进入组件或进入页面,会执行哪些生命周期?"></a>一旦进入组件或进入页面,会执行哪些生命周期?</h3><pre><code>会执行最前面四个</code></pre><pre class="line-numbers language-js" data-language="js"><code class="language-js">beforeCreatecreatedbeforeMountmounted<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h3 id="如果使用了keep-alive会多出来两个生命周期"><a href="#如果使用了keep-alive会多出来两个生命周期" class="headerlink" title="如果使用了keep-alive会多出来两个生命周期"></a>如果使用了keep-alive会多出来两个生命周期</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js">activateddeactivated<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="如果使用keep-alive-第一次进入组件会执行五个生命周期"><a href="#如果使用keep-alive-第一次进入组件会执行五个生命周期" class="headerlink" title="如果使用keep-alive,第一次进入组件会执行五个生命周期"></a>如果使用keep-alive,第一次进入组件会执行五个生命周期</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js">beforeCreatecreatedbeforeMountmountedactivated<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="如果执行keep-alive-第1次或者第n次每次都会执行一个生命周期"><a href="#如果执行keep-alive-第1次或者第n次每次都会执行一个生命周期" class="headerlink" title="如果执行keep-alive,第1次或者第n次每次都会执行一个生命周期"></a>如果执行keep-alive,第1次或者第n次每次都会执行一个生命周期</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js">activated<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+            <tag> Vue生命周期 </tag>
+            
+            <tag> 面试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>全选-反选案例</title>
       <link href="/posts/select.html"/>
       <url>/posts/select.html</url>

@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>v-model双向绑定原理</title>
+      <link href="/posts/v-model.html"/>
+      <url>/posts/v-model.html</url>
+      
+        <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><pre><code>通过Object.defineProperty劫持数据发生的改变,如果数据发生了改变(在set中进行赋值的),则触发update方法进行更新节点内容({{str}}),从而实现双向数据绑定</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+            <tag> 面试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vuex</title>
+      <link href="/posts/vuex.html"/>
+      <url>/posts/vuex.html</url>
+      
+        <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="Vuex是什么"><a href="#Vuex是什么" class="headerlink" title="Vuex是什么"></a>Vuex是什么</h3><pre><code>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式 + 库</code></pre><h3 id="Vuex由哪些部分构成"><a href="#Vuex由哪些部分构成" class="headerlink" title="Vuex由哪些部分构成"></a>Vuex由哪些部分构成</h3><pre><code>state、getters、mutations、actions、modules</code></pre><h3 id="什么场景使用Vuex-有什么好处"><a href="#什么场景使用Vuex-有什么好处" class="headerlink" title="什么场景使用Vuex, 有什么好处"></a>什么场景使用Vuex, 有什么好处</h3><pre><code>共享、方便管理、方便维护、组件传值场景: 购物车数据、订单数据、用户的登录信息</code></pre><h3 id="mutations和actions区别"><a href="#mutations和actions区别" class="headerlink" title="mutations和actions区别"></a>mutations和actions区别</h3><pre><code>mutations必须同步函数actions可以包含任意异步函数使用区别: mutations和actions都可以放入函数,但是一般我们在mutations中写入函数,在actions提交mutations</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+            <tag> 面试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>vue路由</title>
       <link href="/posts/router.html"/>
       <url>/posts/router.html</url>

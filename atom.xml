@@ -6,7 +6,7 @@
   <link href="https://snx.icu/atom.xml" rel="self"/>
   
   <link href="https://snx.icu/"/>
-  <updated>2023-04-25T17:47:36.408Z</updated>
+  <updated>2023-04-26T04:12:25.093Z</updated>
   <id>https://snx.icu/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue路由</title>
+    <link href="https://snx.icu/posts/router.html"/>
+    <id>https://snx.icu/posts/router.html</id>
+    <published>2022-06-25T04:33:47.000Z</published>
+    <updated>2023-04-26T04:12:25.093Z</updated>
+    
+    <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="SPA单页面应用和传统页面跳转有什么区别"><a href="#SPA单页面应用和传统页面跳转有什么区别" class="headerlink" title="SPA单页面应用和传统页面跳转有什么区别?"></a>SPA单页面应用和传统页面跳转有什么区别?</h3><pre><code>SPA跳转是一个页面进行切换传统页面跳转是跳转到不同的htmlSPA对于seo不是很友好,只能收录一个传统的页面对于seo比较友好,可以多个html文件</code></pre><h3 id="路径传值"><a href="#路径传值" class="headerlink" title="路径传值"></a>路径传值</h3><h4 id="显式"><a href="#显式" class="headerlink" title="显式"></a>显式</h4><pre class="line-numbers language-js" data-language="js"><code class="language-js">传<span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>path<span class="token operator">:</span> <span class="token string">'/a'</span><span class="token punctuation">,</span>query<span class="token operator">:</span> <span class="token punctuation">{</span>key<span class="token operator">:</span> <span class="token string">'你好'</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span>接<span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>$route<span class="token punctuation">.</span>query<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="隐式"><a href="#隐式" class="headerlink" title="隐式"></a>隐式</h4><pre class="line-numbers language-js" data-language="js"><code class="language-js">传<span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>name<span class="token operator">:</span> <span class="token string">'A'</span><span class="token punctuation">,</span>params<span class="token operator">:</span> <span class="token punctuation">{</span>key<span class="token operator">:</span> <span class="token string">'你好'</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span>接<span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>$route<span class="token punctuation">.</span>params<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="路由的模式"><a href="#路由的模式" class="headerlink" title="路由的模式"></a>路由的模式</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js">mode<span class="token operator">:</span> <span class="token string">"history"</span>效果<span class="token operator">:</span> 路由上不带#<span class="token punctuation">,</span> 如<span class="token operator">:</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">localhost:8080</span><span class="token regex-delimiter">/</span></span>mode<span class="token operator">:</span> <span class="token string">"hash"</span>效果<span class="token operator">:</span> 路由上带#<span class="token punctuation">,</span> 如<span class="token operator">:</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">8080</span><span class="token operator">/</span>#<span class="token operator">/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="路由加载模式"><a href="#路由加载模式" class="headerlink" title="路由加载模式"></a>路由加载模式</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js">正常加载<span class="token operator">:</span><span class="token keyword">import</span> Home <span class="token keyword">from</span> <span class="token string">'Home.vue'</span>component<span class="token operator">:</span> Home<span class="token function">懒加载</span><span class="token punctuation">(</span>性能好一点<span class="token punctuation">)</span><span class="token operator">:</span><span class="token function-variable function">component</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'Home.vue'</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="路由导航守卫-拦截、路由钩子函数"><a href="#路由导航守卫-拦截、路由钩子函数" class="headerlink" title="路由导航守卫(拦截、路由钩子函数)"></a>路由导航守卫(拦截、路由钩子函数)</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js">全局<span class="token operator">:</span>beforeEachbeforeResolveafterEach路由独享<span class="token operator">:</span>beforeEnter组件内<span class="token operator">:</span>beforeRouteEnterbeforeRouteUpdatebeforeRouteLeave<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h4><pre><code>拦截、判断用户是否是登录状态</code></pre><h3 id="子路由、动态路由"><a href="#子路由、动态路由" class="headerlink" title="子路由、动态路由"></a>子路由、动态路由</h3><pre><code class="js">    子路由: children    动态路由: path: 'user/:id'</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;相遇皆是缘分&lt;/p&gt;
+&lt;h3 id=&quot;SPA单页面应用和传统页面跳转有什么区别&quot;&gt;&lt;a href=&quot;#SPA单页面应用和传统页面跳转有什么区别&quot; class=&quot;headerlink&quot; title=&quot;SPA单页面应用和传统页面跳转有什么区别?&quot;&gt;&lt;/a&gt;SPA单页面应用和传统</summary>
+      
+    
+    
+    
+    <category term="Vue" scheme="https://snx.icu/categories/Vue/"/>
+    
+    
+    <category term="Vue" scheme="https://snx.icu/tags/Vue/"/>
+    
+    <category term="面试题" scheme="https://snx.icu/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>slot插槽</title>
+    <link href="https://snx.icu/posts/slot.html"/>
+    <id>https://snx.icu/posts/slot.html</id>
+    <published>2022-06-18T14:51:37.000Z</published>
+    <updated>2023-04-26T03:28:08.541Z</updated>
+    
+    <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><pre><code>组件中有些地方布局一致,但内容有细微的变化</code></pre><p>```html<br>    例:<br>    组件A: </p><header><br>            <i> &lt; <i><br>            <input type="text"><br>            <slot></slot><br>          </i></i></header><i><i><br>    使用者B: <a><br>                <span>搜索</span><br>            </a><p></p></i></i>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;相遇皆是缘分&lt;/p&gt;
+&lt;h3 id=&quot;使用场景&quot;&gt;&lt;a href=&quot;#使用场景&quot; class=&quot;headerlink&quot; title=&quot;使用场景&quot;&gt;&lt;/a&gt;使用场景&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;组件中有些地方布局一致,但内容有细微的变化&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;``</summary>
+      
+    
+    
+    
+    <category term="Vue" scheme="https://snx.icu/categories/Vue/"/>
+    
+    
+    <category term="Vue" scheme="https://snx.icu/tags/Vue/"/>
+    
+    <category term="面试题" scheme="https://snx.icu/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>vue组件的通信（组件传值）</title>
@@ -526,60 +581,6 @@ v-if和v-for要避免在同一个节点上使用,因为性能会比较差且esli
     <category term="JavaScript" scheme="https://snx.icu/tags/JavaScript/"/>
     
     <category term="冒泡排序法" scheme="https://snx.icu/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>翻转数组</title>
-    <link href="https://snx.icu/posts/flip-array.html"/>
-    <id>https://snx.icu/posts/flip-array.html</id>
-    <published>2022-01-17T05:31:35.000Z</published>
-    <updated>2023-04-25T17:57:15.970Z</updated>
-    
-    <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><pre><code>在JavaScript中,翻转数组的两种方式</code></pre><h3 id="页面效果"><a href="#页面效果" class="headerlink" title="页面效果"></a>页面效果</h3><img src="https://i.328888.xyz/2023/01/28/jInkq.png"><h3 id="JavaScript代码"><a href="#JavaScript代码" class="headerlink" title="JavaScript代码"></a>JavaScript代码</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 第一种,首尾交换</span><span class="token comment">// 初始数组</span><span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">// 循环二分之一数组长度</span><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arr<span class="token punctuation">.</span>length<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">// 借助temp交换</span><span class="token keyword">var</span> temp <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>arr<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">-</span> i<span class="token punctuation">]</span><span class="token punctuation">;</span>arr<span class="token punctuation">[</span>arr<span class="token punctuation">.</span>length<span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">-</span> i<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token comment">// 打印</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 第二种,借助新数组</span><span class="token comment">// 初始数组</span><span class="token keyword">var</span> arr1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">,</span><span class="token string">'b'</span><span class="token punctuation">,</span><span class="token string">'c'</span><span class="token punctuation">,</span><span class="token string">'d'</span><span class="token punctuation">,</span><span class="token string">'e'</span><span class="token punctuation">,</span><span class="token string">'f'</span><span class="token punctuation">,</span><span class="token string">'g'</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">// 初始新数组</span><span class="token keyword">var</span> newArr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 循环</span><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arr1<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">// 新数组依次添加原数组从末位开始向首位的值</span>newArr<span class="token punctuation">[</span>newArr<span class="token punctuation">.</span>length<span class="token punctuation">]</span> <span class="token operator">=</span> arr1<span class="token punctuation">[</span>arr1<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">-</span> i<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token comment">// 打印</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>newArr<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;相遇皆是缘分&lt;/p&gt;
-&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;在JavaScript中,翻转数组的两种方式&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;页面效果</summary>
-      
-    
-    
-    
-    <category term="JavaScript" scheme="https://snx.icu/categories/JavaScript/"/>
-    
-    
-    <category term="JavaScript" scheme="https://snx.icu/tags/JavaScript/"/>
-    
-    <category term="翻转数组" scheme="https://snx.icu/tags/%E7%BF%BB%E8%BD%AC%E6%95%B0%E7%BB%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1~100累加值(跳过个位数为3的数)</title>
-    <link href="https://snx.icu/posts/js-demo.html"/>
-    <id>https://snx.icu/posts/js-demo.html</id>
-    <published>2022-01-14T11:22:33.000Z</published>
-    <updated>2023-04-25T17:49:30.622Z</updated>
-    
-    <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><pre><code>1~100累加值,跳过个位数为3的数</code></pre><h3 id="JavaScript代码"><a href="#JavaScript代码" class="headerlink" title="JavaScript代码"></a>JavaScript代码</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 定义初始累计值</span><span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">// 遍历1~100</span><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>i <span class="token operator">&lt;=</span> <span class="token number">100</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">// 判断个位数是否为3</span><span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">%</span> <span class="token number">10</span> <span class="token operator">===</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">// 跳过循环</span><span class="token keyword">continue</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token comment">// 满足条件相加</span>num <span class="token operator">+=</span> i<span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token comment">// 打印</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;相遇皆是缘分&lt;/p&gt;
-&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;1~100累加值,跳过个位数为3的数&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;JavaScri</summary>
-      
-    
-    
-    
-    <category term="JavaScript" scheme="https://snx.icu/categories/JavaScript/"/>
-    
-    
-    <category term="JavaScript" scheme="https://snx.icu/tags/JavaScript/"/>
     
   </entry>
   

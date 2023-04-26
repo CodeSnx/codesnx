@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>vue路由</title>
+      <link href="/posts/router.html"/>
+      <url>/posts/router.html</url>
+      
+        <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="SPA单页面应用和传统页面跳转有什么区别"><a href="#SPA单页面应用和传统页面跳转有什么区别" class="headerlink" title="SPA单页面应用和传统页面跳转有什么区别?"></a>SPA单页面应用和传统页面跳转有什么区别?</h3><pre><code>SPA跳转是一个页面进行切换传统页面跳转是跳转到不同的htmlSPA对于seo不是很友好,只能收录一个传统的页面对于seo比较友好,可以多个html文件</code></pre><h3 id="路径传值"><a href="#路径传值" class="headerlink" title="路径传值"></a>路径传值</h3><h4 id="显式"><a href="#显式" class="headerlink" title="显式"></a>显式</h4><pre class="line-numbers language-js" data-language="js"><code class="language-js">传<span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>path<span class="token operator">:</span> <span class="token string">'/a'</span><span class="token punctuation">,</span>query<span class="token operator">:</span> <span class="token punctuation">{</span>key<span class="token operator">:</span> <span class="token string">'你好'</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span>接<span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>$route<span class="token punctuation">.</span>query<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="隐式"><a href="#隐式" class="headerlink" title="隐式"></a>隐式</h4><pre class="line-numbers language-js" data-language="js"><code class="language-js">传<span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>name<span class="token operator">:</span> <span class="token string">'A'</span><span class="token punctuation">,</span>params<span class="token operator">:</span> <span class="token punctuation">{</span>key<span class="token operator">:</span> <span class="token string">'你好'</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span>接<span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>$route<span class="token punctuation">.</span>params<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="路由的模式"><a href="#路由的模式" class="headerlink" title="路由的模式"></a>路由的模式</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js">mode<span class="token operator">:</span> <span class="token string">"history"</span>效果<span class="token operator">:</span> 路由上不带#<span class="token punctuation">,</span> 如<span class="token operator">:</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">localhost:8080</span><span class="token regex-delimiter">/</span></span>mode<span class="token operator">:</span> <span class="token string">"hash"</span>效果<span class="token operator">:</span> 路由上带#<span class="token punctuation">,</span> 如<span class="token operator">:</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">8080</span><span class="token operator">/</span>#<span class="token operator">/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="路由加载模式"><a href="#路由加载模式" class="headerlink" title="路由加载模式"></a>路由加载模式</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js">正常加载<span class="token operator">:</span><span class="token keyword">import</span> Home <span class="token keyword">from</span> <span class="token string">'Home.vue'</span>component<span class="token operator">:</span> Home<span class="token function">懒加载</span><span class="token punctuation">(</span>性能好一点<span class="token punctuation">)</span><span class="token operator">:</span><span class="token function-variable function">component</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'Home.vue'</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="路由导航守卫-拦截、路由钩子函数"><a href="#路由导航守卫-拦截、路由钩子函数" class="headerlink" title="路由导航守卫(拦截、路由钩子函数)"></a>路由导航守卫(拦截、路由钩子函数)</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js">全局<span class="token operator">:</span>beforeEachbeforeResolveafterEach路由独享<span class="token operator">:</span>beforeEnter组件内<span class="token operator">:</span>beforeRouteEnterbeforeRouteUpdatebeforeRouteLeave<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h4><pre><code>拦截、判断用户是否是登录状态</code></pre><h3 id="子路由、动态路由"><a href="#子路由、动态路由" class="headerlink" title="子路由、动态路由"></a>子路由、动态路由</h3><pre><code class="js">    子路由: children    动态路由: path: 'user/:id'</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+            <tag> 面试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>slot插槽</title>
+      <link href="/posts/slot.html"/>
+      <url>/posts/slot.html</url>
+      
+        <content type="html"><![CDATA[<p>相遇皆是缘分</p><h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><pre><code>组件中有些地方布局一致,但内容有细微的变化</code></pre><p>```html<br>    例:<br>    组件A: </p><header><br>            <i> &lt; <i><br>            <input type="text"><br>            <slot></slot><br>          </i></i></header><i><i><br>    使用者B: <a><br>                <span>搜索</span><br>            </a><p></p></i></i>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+            <tag> 面试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>vue组件的通信（组件传值）</title>
       <link href="/posts/component-communication.html"/>
       <url>/posts/component-communication.html</url>
